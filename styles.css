@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px auto;
+  height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+}
+
+header {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgb(41, 40, 40);
+  color: aliceblue;
+}
+
+main {
+  grid-column: 1 / -1;
+  background-color: rgb(240, 234, 227);
+}
+
+header h1 {
+  line-height: 100px;
+  margin-left: 40px;
+  font-size: 4rem;
+}
+
+header h2 {
+  text-align: right;
+  line-height: 100px;
+  margin-right: 40px;
+  font-size: 2.5rem;
+}
+
+.quotes-container {
+  margin: 5px 15% 60px 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.person-name {
+  font-size: 2rem;
+}
+
+.quote {
+  font-size: 1.3rem;
+  padding: 8px 0;
+  font-family: "lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "sedan sc", sans-serif;
+}
+
+.quotes-container p:nth-child(2) {
+  background-color: rgb(19, 19, 121);
+  color: white;
+}
+
+.quotes-container p:nth-child(3) {
+  background-color: rgb(161, 31, 57);
+  color: white;
+}
+
+.quotes-container p:nth-child(4) {
+  background-color: rgb(15, 110, 15);
+  color: white;
+}
+
+.quotes-container p:nth-child(5) {
+  background-color: black;
+  color: white;
+}
